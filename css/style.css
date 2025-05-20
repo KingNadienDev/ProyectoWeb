@@ -9614,11 +9614,16 @@ h6,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.5);
   transition: .5s;
   z-index: 1;
 }
+
+
+.bordeimagen{
+  border: 5px solid lime;
+}
+
 
 .destination-item:hover .destination-overlay {
   top: 0px;
@@ -9867,4 +9872,29 @@ h6,
   .whatsapp-float img {
     width: 30px;
     height: 30px;
+  }
+
+
+  /* GALERIA */
+
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    gap: 15px;
+    perspective: 800px; /* para que el "adelante" tenga profundidad */
+  }
+  .gallery img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+  .gallery img:hover {
+    transform: translateZ(40px) scale(1.2);
+    z-index: 10;
+    box-shadow: 0 8px 16px rgba(255,255,255,0.7);
   }
