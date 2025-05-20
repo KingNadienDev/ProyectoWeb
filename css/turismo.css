@@ -1,0 +1,125 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.carousel img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  animation: carouselAnimation 8s infinite;
+}
+
+.carousel img:nth-child(2) { animation-delay: 2s; }
+.carousel img:nth-child(3) { animation-delay: 4s; }
+.carousel img:nth-child(4) { animation-delay: 6s; }
+
+@keyframes carouselAnimation {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  25% { opacity: 1; }
+  35% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Main content (visible después del preloader) */
+#main-content {
+  display: block;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #009688;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd54f;
+}
+
+#preloader {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: black;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-image: url('./img/AFRICA5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.curtain {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  background-image: url('./img/AFRICA5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 1s ease;
+  z-index: 10;
+  backdrop-filter: brightness(0.5);
+}
+
+
+.curtain.left {
+  left: 0;
+  border-right: 1px solid black;
+}
+
+.curtain.right {
+  right: 0;
+  border-left: 1px solid black;
+}
+
+
+#preloader.loaded .curtain.left {
+  transform: translateX(-100%);
+}
+
+#preloader.loaded .curtain.right {
+  transform: translateX(100%);
+}
+
+#preloader.loaded {
+  pointer-events: none;
+  transition: opacity 0.5s ease 1s;
+  opacity: 0;
+}
