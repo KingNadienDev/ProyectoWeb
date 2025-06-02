@@ -1,0 +1,88 @@
+body{
+    background-color: #6dec62;
+}
+h1{
+    text-align: right;
+    color: #308ae4;
+    font-size: 5rem;
+    margin-top: 50px;
+    margin-right: 260px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1:hover{
+    color: #043502;
+    transition: color 0.3s ease;
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+.principal{
+    display: flex;
+    margin-top: 100px;
+    background-color: #042a53;
+}
+.secundario{
+    width: 400px;
+    /* height: 200px; */
+    background-color: rgb(146, 197, 218);
+    margin: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.secundario:hover{
+    transform: scale(1.10);
+    transition: transform 0.2s ease;
+    background-color: #86bbf5;
+}
+.card-img-top{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 5px;
+}
+.card-img-top:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+    opacity: 0.8;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.card-text{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ffffff;
+}
+.btn-primary{
+    display: block;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+.btn-primary:hover{
+    background-color: #0056b3;
+}
+
+@media (min-width: 400px) and (max-width: 768px){
+    .principal{
+        display: block;
+    }
+    .secundario{
+        width: 100%;
+        margin: 10px 0;
+    }
+    span{
+        display: inline-block;
+    }
+    button{
+        display: none;
+    }
+}
