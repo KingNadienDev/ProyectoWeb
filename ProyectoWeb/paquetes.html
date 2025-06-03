@@ -1,81 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paquetes</title>
-<link rel="stylesheet" href="css/paquetes.css">
+    <title>Paquetes de Viaje</title>
+    <!-- Incluye el CDN de Tailwind CSS para un diseño responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define la fuente Inter para todo el documento */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h1>PAQUETES</h1>
-    <div class="principal">
-        <div class="secundario">
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/destino-africa.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">AFRICA</h5>
-                  <p class="card-text">¡Tu Aventura Africana te Espera!
-                    Prepárate para una experiencia que te cambiará la vida. Nuestro paquete turístico a África te sumerge en el corazón de la naturaleza más salvaje y espectacular del planeta. Imagina amaneceres dorados sobre la sabana, el emocionante rugido de un león en la distancia y la  majestuosidad de manadas de elefantes desfilando frente a tus ojos.</p>
-                  <a href="#" class="btn-primary">Go somewhere</a>
+<body class="bg-[#6dec62] p-4 sm:p-6 md:p-8">
+    <!-- Título principal de la página -->
+    <h1 class="text-right text-[#308ae4] text-4xl sm:text-5xl md:text-6xl font-bold mt-8 sm:mt-12 mr-4 sm:mr-8 md:mr-16 lg:mr-24 transition-all duration-300 ease-in-out transform hover:text-[#043502] hover:scale-105">
+        PAQUETES
+    </h1>
+
+    <!-- Contenedor principal de las tarjetas de paquetes -->
+    <div class="principal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 sm:mt-16 md:mt-20 p-4 bg-[#042a53] rounded-lg shadow-xl mx-auto max-w-7xl">
+        <!-- Tarjeta de paquete individual -->
+        <div class="secundario w-full bg-blue-200 rounded-lg shadow-md overflow-hidden cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 hover:bg-[#86bbf5]">
+            <div class="card">
+                <!-- Imagen del destino -->
+                <img src="imagenes/destino-africa.jpg" class="card-img-top w-full h-48 object-cover p-1 rounded-t-lg transition-all duration-200 ease-in-out hover:scale-105 hover:opacity-80" alt="Imagen de destino: África">
+                <div class="card-body p-4">
+                    <!-- Título del paquete -->
+                    <h5 class="card-title text-xl sm:text-2xl font-bold text-center mb-2">AFRICA</h5>
+                    <!-- Descripción del paquete -->
+                    <p class="card-text text-sm sm:text-base text-center text-gray-800 leading-relaxed mb-4">
+                        ¡Tu Aventura Africana te Espera! Prepárate para una experiencia que te cambiará la vida. Nuestro paquete turístico a África te sumerge en el corazón de la naturaleza más salvaje y espectacular del planeta. Imagina amaneceres dorados sobre la sabana, el emocionante rugido de un león en la distancia y la majestuosidad de manadas de elefantes desfilando frente a tus ojos.
+                    </p>
+                    <!-- Botón de acción -->
+                    <a href="#" class="btn-primary block mx-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md text-center transition-colors duration-200 ease-in-out">
+                        Ver más
+                    </a>
                 </div>
-              </div>
+            </div>
         </div>
-        <div class="secundario">
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/destino-america-norte.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">EEUU</h5>
-                  <p class="card-text">¡Descubre la Inmensidad y la Magia de Estados Unidos!
-                    Prepárate para un viaje épico a través de la tierra de la libertad y las oportunidades, donde la diversidad de paisajes y culturas te dejará sin aliento. Nuestro paquete turístico a Estados Unidos te invita a explorar desde ciudades vibrantes hasta maravillas naturales que parecen de otro mundo</p>
-                  <a href="#" class="btn-primary">Go somewhere</a>
+
+        <!-- Repite la estructura para las demás tarjetas -->
+        <div class="secundario w-full bg-blue-200 rounded-lg shadow-md overflow-hidden cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 hover:bg-[#86bbf5]">
+            <div class="card">
+                <img src="imagenes/destino-america-norte.jpg" class="card-img-top w-full h-48 object-cover p-1 rounded-t-lg transition-all duration-200 ease-in-out hover:scale-105 hover:opacity-80" alt="Imagen de destino: Estados Unidos">
+                <div class="card-body p-4">
+                    <h5 class="card-title text-xl sm:text-2xl font-bold text-center mb-2">EEUU</h5>
+                    <p class="card-text text-sm sm:text-base text-center text-gray-800 leading-relaxed mb-4">
+                        ¡Descubre la Inmensidad y la Magia de Estados Unidos! Prepárate para un viaje épico a través de la tierra de la libertad y las oportunidades, donde la diversidad de paisajes y culturas te dejará sin aliento. Nuestro paquete turístico a Estados Unidos te invita a explorar desde ciudades vibrantes hasta maravillas naturales que parecen de otro mundo.
+                    </p>
+                    <a href="#" class="btn-primary block mx-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md text-center transition-colors duration-200 ease-in-out">
+                        Ver más
+                    </a>
                 </div>
-              </div>
+            </div>
         </div>
-        <div class="secundario">
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/destino-europa.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">PARIS</h5>
-                  <p class="card-text">¡París te Espera: La Ciudad del Amor y los Sueños!
-                    Déjate seducir por la magia incomparable de París, un destino que evoca romance, arte y una sofisticación atemporal. Nuestro paquete turístico te invita a vivir una experiencia inolvidable en la capital francesa, donde cada esquina cuenta una historia y cada momento es digno de una postal.</p>
-                  <a href="#" class="btn-primary">Go somewhere</a>
+
+        <div class="secundario w-full bg-blue-200 rounded-lg shadow-md overflow-hidden cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 hover:bg-[#86bbf5]">
+            <div class="card">
+                <img src="imagenes/destino-europa.jpg" class="card-img-top w-full h-48 object-cover p-1 rounded-t-lg transition-all duration-200 ease-in-out hover:scale-105 hover:opacity-80" alt="Imagen de destino: París, Europa">
+                <div class="card-body p-4">
+                    <h5 class="card-title text-xl sm:text-2xl font-bold text-center mb-2">PARIS</h5>
+                    <p class="card-text text-sm sm:text-base text-center text-gray-800 leading-relaxed mb-4">
+                        ¡París te Espera: La Ciudad del Amor y los Sueños! Déjate seducir por la magia incomparable de París, un destino que evoca romance, arte y una sofisticación atemporal. Nuestro paquete turístico te invita a vivir una experiencia inolvidable en la capital francesa, donde cada esquina cuenta una historia y cada momento es digno de una postal.
+                    </p>
+                    <a href="#" class="btn-primary block mx-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md text-center transition-colors duration-200 ease-in-out">
+                        Ver más
+                    </a>
                 </div>
-              </div>
+            </div>
         </div>
-        <div class="secundario">
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/destino-asia.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">JAPON</h5>
-                  <p class="card-text">Japón: Donde el Futuro se Encuentra con la Tradición Milenaria
-                    Embárcate en un viaje inmersivo al corazón de un país fascinante, donde la serenidad de sus templos ancestrales convive en perfecta armonía con la vibrante energía de sus ciudades futuristas. Nuestro paquete turístico a Japón te invita a descubrir una cultura única y una hospitalidad inigualable.</p>
-                  <a href="#" class="btn-primary">Go somewhere</a>
+
+        <div class="secundario w-full bg-blue-200 rounded-lg shadow-md overflow-hidden cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 hover:bg-[#86bbf5]">
+            <div class="card">
+                <img src="imagenes/destino-asia.jpg" class="card-img-top w-full h-48 object-cover p-1 rounded-t-lg transition-all duration-200 ease-in-out hover:scale-105 hover:opacity-80" alt="Imagen de destino: Japón, Asia">
+                <div class="card-body p-4">
+                    <h5 class="card-title text-xl sm:text-2xl font-bold text-center mb-2">JAPON</h5>
+                    <p class="card-text text-sm sm:text-base text-center text-gray-800 leading-relaxed mb-4">
+                        Japón: Donde el Futuro se Encuentra con la Tradición Milenaria. Embárcate en un viaje inmersivo al corazón de un país fascinante, donde la serenidad de sus templos ancestrales convive en perfecta armonía con la vibrante energía de sus ciudades futuristas. Nuestro paquete turístico a Japón te invita a descubrir una cultura única y una hospitalidad inigualable.
+                    </p>
+                    <a href="#" class="btn-primary block mx-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md text-center transition-colors duration-200 ease-in-out">
+                        Ver más
+                    </a>
                 </div>
-              </div>
+            </div>
         </div>
-        <div class="secundario">
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/destino-oceania.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">AUSTRALIA</h5>
-                  <p class="card-text">¡Australia te Espera: La Aventura de Tu Vida en la Tierra de los Contrastes!
-                    Prepárate para un viaje épico a través de paisajes que te dejarán sin aliento y encuentros inolvidables con la vida salvaje. Nuestro paquete turístico a Australia te sumerge en la esencia de la aventura, desde las profundidades del océano hasta el corazón del Outback.</p>
-                  <a href="#" class="btn-primary">Go somewhere</a>
+
+        <div class="secundario w-full bg-blue-200 rounded-lg shadow-md overflow-hidden cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 hover:bg-[#86bbf5]">
+            <div class="card">
+                <img src="imagenes/destino-oceania.jpg" class="card-img-top w-full h-48 object-cover p-1 rounded-t-lg transition-all duration-200 ease-in-out hover:scale-105 hover:opacity-80" alt="Imagen de destino: Australia, Oceanía">
+                <div class="card-body p-4">
+                    <h5 class="card-title text-xl sm:text-2xl font-bold text-center mb-2">AUSTRALIA</h5>
+                    <p class="card-text text-sm sm:text-base text-center text-gray-800 leading-relaxed mb-4">
+                        ¡Australia te Espera: La Aventura de Tu Vida en la Tierra de los Contrastes! Prepárate para un viaje épico a través de paisajes que te dejarán sin aliento y encuentros inolvidables con la vida salvaje. Nuestro paquete turístico a Australia te sumerge en la esencia de la aventura, desde las profundidades del océano hasta el corazón del Outback.
+                    </p>
+                    <a href="#" class="btn-primary block mx-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md text-center transition-colors duration-200 ease-in-out">
+                        Ver más
+                    </a>
                 </div>
-              </div>
+            </div>
         </div>
-        <div class="secundario">
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/destino-america-sur.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">BUENOS AIRES</h5>
-                  <p class="card-text">Buenos Aires al Ritmo del Tango: Un Viaje Apasionado
-                    Sumérgete en el alma de Buenos Aires con un paquete turístico que celebra la pasión del tango. Desde las milongas más auténticas hasta los espectáculos más deslumbrantes, este viaje te invita a vivir la tradición argentina en cada paso.</p>
-                  <a href="#" class="btn-primary">Go somewhere</a>
+
+        <div class="secundario w-full bg-blue-200 rounded-lg shadow-md overflow-hidden cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 hover:bg-[#86bbf5]">
+            <div class="card">
+                <img src="imagenes/destino-america-sur.jpg" class="card-img-top w-full h-48 object-cover p-1 rounded-t-lg transition-all duration-200 ease-in-out hover:scale-105 hover:opacity-80" alt="Imagen de destino: Buenos Aires, América del Sur">
+                <div class="card-body p-4">
+                    <h5 class="card-title text-xl sm:text-2xl font-bold text-center mb-2">BUENOS AIRES</h5>
+                    <p class="card-text text-sm sm:text-base text-center text-gray-800 leading-relaxed mb-4">
+                        Buenos Aires al Ritmo del Tango: Un Viaje Apasionado. Sumérgete en el alma de Buenos Aires con un paquete turístico que celebra la pasión del tango. Desde las milongas más auténticas hasta los espectáculos más deslumbrantes, este viaje te invita a vivir la tradición argentina en cada paso.
+                    </p>
+                    <a href="#" class="btn-primary block mx-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md text-center transition-colors duration-200 ease-in-out">
+                        Ver más
+                    </a>
                 </div>
-              </div>
+            </div>
         </div>
-    </div>    
- <script src="javascript/paquetes.js"></script>
+    </div>
 </body>
 </html>
