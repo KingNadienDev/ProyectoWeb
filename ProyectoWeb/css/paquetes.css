@@ -1,0 +1,208 @@
+body {
+    background-color: #6dec62; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Inter', sans-serif; 
+}
+
+/* Estilos para el encabezado principal (h1) */
+h1 {
+    text-align: right; 
+    color: #308ae4; 
+    font-size: 5rem; 
+    margin-top: 50px; 
+    margin-right: 260px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    transition: color 0.3s ease, transform 0.2s ease; 
+}
+
+
+h1:hover {
+    color: #043502;
+    transform: scale(1.05); 
+}
+
+/* Contenedor principal de las tarjetas */
+.principal {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-top: 100px; 
+    background-color: #042a53; 
+    padding: 20px;     
+    gap: 20px; 
+    border-radius: 10px; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+}
+
+/* Estilos para las tarjetas individuales */
+.secundario {
+    width: 100%; 
+    max-width: 400px;
+    background-color: rgb(146, 197, 218); 
+    margin: 10px; 
+    box-sizing: border-box; 
+    cursor: pointer; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s ease, background-color 0.2s ease; 
+}
+
+
+.secundario:hover {
+    transform: scale(1.03); 
+    background-color: #86bbf5; 
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.card-img-top {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    padding: 5px; 
+    border-radius: 8px; 
+    transition: transform 0.2s ease, opacity 0.2s ease; 
+}
+
+
+.card-img-top:hover {
+    transform: scale(1.02); 
+    opacity: 0.9; 
+}
+
+/* Estilos para el título de la tarjeta */
+.card-title {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    text-align: center; 
+    color: #042a53; 
+    padding: 10px 0; 
+}
+
+/* Estilos para el texto de la tarjeta */
+.card-text {
+    font-size: 1.2rem; 
+    text-align: center; 
+    color: #ffffff; 
+    padding: 0 15px 15px; 
+}
+
+/* Estilos para los botones primarios */
+.btn-primary {
+    display: block; 
+    margin: 10px auto; 
+    background-color: #007bff; 
+    color: white;    
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    text-align: center; 
+    transition: background-color 0.2s ease, transform 0.2s ease; 
+}
+
+
+.btn-primary:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+
+
+/* Para pantallas con un ancho máximo de 1024px (tablets y laptops pequeñas) */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 4rem; 
+        margin-right: 100px; 
+        text-align: center; 
+        margin-left: 20px; 
+    }
+
+    .principal {
+        margin-top: 50px; 
+        padding: 15px; 
+    }
+
+    .secundario {
+        max-width: 350px; 
+    }
+}
+
+/* Para pantallas con un ancho máximo de 768px (tablets en modo retrato) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem; 
+        margin-right: 20px; 
+        text-align: center; 
+        margin-top: 30px; 
+    }
+
+    .principal {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 30px; 
+        padding: 10px; 
+    }
+
+    .secundario {
+        width: 90%; 
+        margin: 10px 0; 
+    }
+
+    .card-img-top {
+        height: 180px; 
+    }
+
+    .card-title {
+        font-size: 1.3rem; 
+    }
+
+    .card-text {
+        font-size: 1rem; 
+    }
+
+    .btn-primary {
+        padding: 8px 15px; 
+        font-size: 0.9rem; 
+    }
+}
+
+/* Para pantallas con un ancho máximo de 480px (teléfonos móviles) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem; 
+        margin-right: 10px; 
+        text-align: center; 
+    }
+
+    .principal {
+        margin-top: 20px; 
+        padding: 5px; 
+        gap: 10px; 
+    }
+
+    .secundario {
+        width: 95%; 
+        margin: 8px 0; 
+    }
+
+    .card-img-top {
+        height: 150px; 
+    }
+
+    .card-title {
+        font-size: 1.2rem; 
+    }
+
+    .card-text {
+        font-size: 0.9rem; 
+    }
+
+    .btn-primary {
+        padding: 7px 12px; 
+        font-size: 0.85rem; 
+    } 
+}
