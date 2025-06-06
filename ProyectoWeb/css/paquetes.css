@@ -361,4 +361,20 @@ body {
         margin-top: 20px; 
     }
 }
-
+@media screen and (max-width: 375px) {
+    .container {
+        height: 450px;
+    }
+    .content .name {
+        font-size: 25px;
+    }
+    .content .des {
+        font-size: 10px;
+    }
+    .paquete h1 {
+        font-size: 16px;
+    }
+    .paquete p {
+        font-size: 11px;
+    }
+}
