@@ -1,114 +1,75 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paquetes de Viaje</title>
-    <script ></script>
-    <link rel="stylesheet" href="ProyectoWeb/css/paquetes.css">
+    <link rel="stylesheet" href="./css/paquetes.css">
+    <link rel="stylesheet" href="./css/style.css">
     
+    <title>Mates Travel Paquetes</title>
 </head>
 <body>
-    <!-- Título principal de la página -->
-    <h1>PAQUETES</h1>
-
-    <!-- Contenedor principal de las tarjetas de paquetes -->
-    <div class="principal">
-        <!-- Tarjeta de paquete individual -->
-        <div class="secundario">
-            <div class="card">
-                <!-- Imagen del destino -->
-                <img src="imagenes/destino-africa.jpg" class="card-img-top" alt="Imagen de destino: África">
-                <div class="card-body p-4">
-                    <!-- Título del paquete -->
-                    <h5 class="card-title text">AFRICA</h5>
-                    <!-- Descripción del paquete -->
-                    <p class="card-text">
-                        ¡Tu Aventura Africana te Espera! Prepárate para una experiencia que te cambiará la vida. Nuestro paquete turístico a África te sumerge en el corazón de la naturaleza más salvaje y espectacular del planeta. Imagina amaneceres dorados sobre la sabana, el emocionante rugido de un león en la distancia y la majestuosidad de manadas de elefantes desfilando frente a tus ojos.
-                    </p>
-                    <!-- Botón de acción -->
-                    <a href="#" class="btn-primary">
-                        Ver más
-                    </a>
-                </div>
+    
+    
+    <div class="paquete">
+            <h1>Paquetes Turísticos</h1>
+            <p>Descubre el mundo con nuestros paquetes turísticos exclusivos.</p>
+        </div>
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background-image: url(imagenes/AFRICA-i.jpg);">
+                <div class="content">
+                    <div class="name">AFRICA</div>
+                    <div class="des">¡Tu Aventura Africana te Espera! Prepárate para una experiencia que te cambiará la vida. Nuestro paquete turístico a África te sumerge en el corazón de la naturaleza más salvaje y espectacular del planeta. Imagina amaneceres dorados sobre la sabana, el emocionante rugido de un león en la distancia y la majestuosidad de manadas de elefantes desfilando frente a tus ojos.</div>
+                    <button>See More</button>
+                
+            </div>
+        </div>
+        <div class="item" style="background-image: url(imagenes/EEUU-i.jpg);">
+            <div class="content">
+                <div class="name">EEUU</div>
+                <div class="des">¡Descubre la Inmensidad y la Magia de Estados Unidos! Prepárate para un viaje épico a través de la tierra de la libertad y las oportunidades, donde la diversidad de paisajes y culturas te dejará sin aliento. Nuestro paquete turístico a Estados Unidos te invita a explorar desde ciudades vibrantes hasta maravillas naturales que parecen de otro mundo.</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(imagenes/PARIS-i.jpg);">
+            <div class="content">
+                <div class="name">PARIS</div>
+                <div class="des"> ¡París te Espera: La Ciudad del Amor y los Sueños! Déjate seducir por la magia incomparable de París, un destino que evoca romance, arte y una sofisticación atemporal. Nuestro paquete turístico te invita a vivir una experiencia inolvidable en la capital francesa, donde cada esquina cuenta una historia y cada momento es digno de una postal.</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(imagenes/JAPON-i.jpg);">
+            <div class="content">
+                <div class="name">JAPON</div>
+                <div class="des">Japón: Donde el Futuro se Encuentra con la Tradición Milenaria. Embárcate en un viaje inmersivo al corazón de un país fascinante, donde la serenidad de sus templos ancestrales convive en perfecta armonía con la vibrante energía de sus ciudades futuristas. Nuestro paquete turístico a Japón te invita a descubrir una cultura única y una hospitalidad inigualable.</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(imagenes/AUSTRALIA-i.jpg);">
+            <div class="content">
+                <div class="name">AUSTRALIA</div>
+                <div class="des"> ¡Australia te Espera: La Aventura de Tu Vida en la Tierra de los Contrastes! Prepárate para un viaje épico a través de paisajes que te dejarán sin aliento y encuentros inolvidables con la vida salvaje. Nuestro paquete turístico a Australia te sumerge en la esencia de la aventura, desde las profundidades del océano hasta el corazón del Outback.</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(imagenes/BSAS-i.jpg);">
+            <div class="content">
+                <div class="name">BSAS</div>
+                <div class="des">Buenos Aires al Ritmo del Tango: Un Viaje Apasionado. Sumérgete en el alma de Buenos Aires con un paquete turístico que celebra la pasión del tango. Desde las milongas más auténticas hasta los espectáculos más deslumbrantes, este viaje te invita a vivir la tradición argentina en cada paso.</div>
+                <button>See More</button>
             </div>
         </div>
 
-        <!-- Repite la estructura para las demás tarjetas -->
-        <div class="secundario">
-            <div class="card">
-                <img src="imagenes/destino-america-norte.jpg" class="card-img-top" alt="Imagen de destino: Estados Unidos">
-                <div class="card-body p-4">
-                    <h5 class="card-title">EEUU</h5>
-                    <p class="card-text">
-                        ¡Descubre la Inmensidad y la Magia de Estados Unidos! Prepárate para un viaje épico a través de la tierra de la libertad y las oportunidades, donde la diversidad de paisajes y culturas te dejará sin aliento. Nuestro paquete turístico a Estados Unidos te invita a explorar desde ciudades vibrantes hasta maravillas naturales que parecen de otro mundo.
-                    </p>
-                    <a href="#" class="btn-primary">
-                        Ver más
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="secundario">
-            <div class="card">
-                <img src="imagenes/destino-europa.jpg" class="card-img-top" alt="Imagen de destino: París, Europa">
-                <div class="card-body p-4">
-                    <h5 class="card-title">PARIS</h5>
-                    <p class="card-text">
-                        ¡París te Espera: La Ciudad del Amor y los Sueños! Déjate seducir por la magia incomparable de París, un destino que evoca romance, arte y una sofisticación atemporal. Nuestro paquete turístico te invita a vivir una experiencia inolvidable en la capital francesa, donde cada esquina cuenta una historia y cada momento es digno de una postal.
-                    </p>
-                    <a href="#" class="btn-primary">
-                        Ver más
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="secundario">
-            <div class="card">
-                <img src="imagenes/destino-asia.jpg" class="card-img-top" alt="Imagen de destino: Japón, Asia">
-                <div class="card-body p-4">
-                    <h5 class="card-title">JAPON</h5>
-                    <p class="card-text">
-                        Japón: Donde el Futuro se Encuentra con la Tradición Milenaria. Embárcate en un viaje inmersivo al corazón de un país fascinante, donde la serenidad de sus templos ancestrales convive en perfecta armonía con la vibrante energía de sus ciudades futuristas. Nuestro paquete turístico a Japón te invita a descubrir una cultura única y una hospitalidad inigualable.
-                    </p>
-                    <a href="#" class="btn-primary">
-                        Ver más
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="secundario">
-            <div class="card">
-                <img src="imagenes/destino-oceania.jpg" class="card-img-top" alt="Imagen de destino: Australia, Oceanía">
-                <div class="card-body p-4">
-                    <h5 class="card-title">AUSTRALIA</h5>
-                    <p class="card-text">
-                        ¡Australia te Espera: La Aventura de Tu Vida en la Tierra de los Contrastes! Prepárate para un viaje épico a través de paisajes que te dejarán sin aliento y encuentros inolvidables con la vida salvaje. Nuestro paquete turístico a Australia te sumerge en la esencia de la aventura, desde las profundidades del océano hasta el corazón del Outback.
-                    </p>
-                    <a href="#" class="btn-primary">
-                        Ver más
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="secundario">
-            <div class="card">
-                <img src="imagenes/destino-america-sur.jpg" class="card-img-top" alt="Imagen de destino: Buenos Aires, América del Sur">
-                <div class="card-body p-4">
-                    <h5 class="card-title">BUENOS AIRES</h5>
-                    <p class="card-text">
-                        Buenos Aires al Ritmo del Tango: Un Viaje Apasionado. Sumérgete en el alma de Buenos Aires con un paquete turístico que celebra la pasión del tango. Desde las milongas más auténticas hasta los espectáculos más deslumbrantes, este viaje te invita a vivir la tradición argentina en cada paso.
-                    </p>
-                    <a href="#" class="btn-primary">
-                        Ver más
-                    </a>
-                </div>
-            </div>
-        </div>
     </div>
+
+    <div class="button">
+        <button class="prev"><i class='fas fa-angle-double-left'> << </i></button>
+        <button class="next"><i class='fas fa-angle-double-right'> >> </i></button>
+    </div>
+
+    
+</div>
+<script src="./javascript/paquetes.js"></script>
 </body>
 </html>
