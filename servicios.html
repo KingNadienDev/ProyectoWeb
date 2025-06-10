@@ -1,13 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
+    <title>Nuestros Servicios</title>
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Carga del CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Script para configurar colores personalizados en Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Tonos de verde pastel (se mantienen para el título y el ícono de fondo)
+                        'green-pastel-dark': '#8BC34A', // Un verde pastel ligeramente más oscuro
+                        // 'green-pastel-light': '#DCEDC8', // Este color ya no se usará para el fondo de las tarjetas
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], // Define la fuente Inter como predeterminada
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Importa la fuente Inter de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/servicios.css">
 </head>
 <body>
-    
 
-     
+    <section id="servicios" class="relative mb-16 p-8 rounded-lg shadow-xl max-w-6xl w-full overflow-hidden">
+        <!-- Contenedor de la imagen de fondo y el overlay -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat rounded-lg"
+            style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        </div>
+        <!-- Overlay semi-transparente para mejorar la legibilidad del texto -->
+        <div class="absolute inset-0 bg-black opacity-40 rounded-lg"></div>
+
+        <!-- Contenido de la sección (título y tarjetas) - Aseguramos que estén sobre el overlay con z-index -->
+        <h2 class="relative z-10 text-4xl md:text-5xl font-bold text-center text-white mb-10">Nuestros Servicios de Viaje</h2>
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Tarjeta de Servicio 1: Paquetes Turísticos Personalizados -->
+            <div class="flex items-start p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                <i class="fas fa-route text-4xl text-black mr-5 mt-1"></i>
+                <div>
+                    <h3 class="text-2xl font-semibold text-black mb-2">Paquetes Turísticos Personalizados</h3>
+                    <p class="text-black text-lg">Diseñamos itinerarios a medida para que tu viaje sea único y memorable.</p>
+                </div>
+            </div>
+            <!-- Tarjeta de Servicio 2: Vuelos y Alojamiento -->
+            <div class="flex items-start p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                <i class="fas fa-plane-departure text-4xl text-black mr-5 mt-1"></i>
+                <div>
+                    <h3 class="text-2xl font-semibold text-black mb-2">Vuelos y Alojamiento</h3>
+                    <p class="text-black text-lg">Gestionamos tus boletos y reservas de hoteles con las mejores opciones y precios.</p>
+                </div>
+            </div>
+            <!-- Tarjeta de Servicio 3: Tours y Excursiones -->
+            <div class="flex items-start p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                <i class="fas fa-map-marked-alt text-4xl text-black mr-5 mt-1"></i>
+                <div>
+                    <h3 class="text-2xl font-semibold text-black mb-2">Tours y Excursiones</h3>
+                    <p class="text-black text-lg">Descubre los destinos más fascinantes con nuestros tours guiados y actividades exclusivas.</p>
+                </div>
+            </div>
+            <!-- Tarjeta de Servicio 4: Asistencia 24/7 -->
+            <div class="flex items-start p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                <i class="fas fa-headset text-4xl text-black mr-5 mt-1"></i>
+                <div>
+                    <h3 class="text-2xl font-semibold text-black mb-2">Asistencia 24/7</h3>
+                    <p class="text-black text-lg">Estamos contigo en cada paso del viaje, con soporte disponible a toda hora.</p>
+                </div>
+            </div>
+            <!-- Tarjeta de Servicio 5: Alquiler de Vehículos -->
+            <div class="flex items-start p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                <i class="fas fa-car-side text-4xl text-black mr-5 mt-1"></i>
+                <div>
+                    <h3 class="text-2xl font-semibold text-black mb-2">Alquiler de Vehículos</h3>
+                    <p class="text-black text-lg">Libertad para explorar a tu ritmo con nuestras opciones de alquiler de autos.</p>
+                </div>
+            </div>
+            <!-- Tarjeta de Servicio 6: Seguro de Viaje y Visados -->
+            <div class="flex items-start p-6 rounded-xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                <i class="fas fa-shield-alt text-4xl text-black mr-5 mt-1"></i>
+                <div>
+                    <h3 class="text-2xl font-semibold text-black mb-2">Seguro de Viaje y Visados</h3>
+                    <p class="text-black text-lg">Viaja con tranquilidad, gestionamos tu seguro y los trámites de visado necesarios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
