@@ -9,6 +9,7 @@
 <!-- ESTILOS (CSS) -->
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/estilosnadien.css">
+<link rel="stylesheet" href="./css/estilos.css">
 
 <!-- FAV ICON -->
  <link rel="icon" href="./iconos/mates.png">
@@ -81,8 +82,8 @@
             <a href="sobrenosotros.html" class="nav-item nav-link active"><i class="fa-solid fa-users"></i>Faq</a>
             <a href="servicios.html" class="nav-item nav-link active"><i class="fa-solid fa-plane"></i> Servicios</a>
             <a href="paquetes.html" class="nav-item nav-link active"><i class="fa-solid fa-boxes-packing"></i> Paquetes</a>
-            <a href="contacto.html" class="nav-item nav-link active"><i class="fa-solid fa-address-book"></i> Contacto</a>
-
+           <a href="#" id="openModalLink" class="nav-item nav-link active"><i class="fa-solid fa-address-book"></i> Contacto</a> 
+             
             <!-- Menú principal con submenús -->
             <div class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
@@ -133,6 +134,7 @@
           </div>
         </div>
       </nav>
+      
     </div>
   </div>
   
@@ -173,6 +175,8 @@
 </a>
 </div>
 </div>
+
+
 
 
 
@@ -279,9 +283,23 @@
 <script src="mail/jqBootstrapValidation.min.js"></script>
 <script src="mail/contact.js"></script>
 <script src="js/main.js"></script>
+<script src="./javascript/contactomodal.js"></script>
 
 
-
+<div id="modalOverlay">
+  <div class="custom-modal">
+    <button class="modal-close" id="closeModalBtn">&times;</button>
+    <h2 style="text-align:center; margin-bottom:20px;">Contacto</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+      <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+      <input type="text" id="dni" name="dni"
+             placeholder="DNI (7-10 dígitos)" required pattern="\d{7,10}">
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </div>
+</div>
 
 </body>
 </html>
