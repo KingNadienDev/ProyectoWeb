@@ -6,12 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Mates Travel Inicio</title>
 
+
 <!-- ESTILOS (CSS) -->
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/estilosnadien.css">
+<link rel="stylesheet" href="./css/estilos.css">
 
 <!-- FAV ICON -->
- <link rel="icon" href="./iconos/mates.png">
+ <link rel="icon" href="./imagenes/iconos/faviconlogo.png">
 
 
 <!-- GOOGLE FUENTES -->
@@ -79,18 +81,19 @@
         <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
           <div class="navbar-nav ml-auto py-0">
             <a href="index.html" class="nav-item nav-link active"><i class="fa-solid fa-house"></i> Inicio</a>
-            <a href="sobrenosotros.html" class="nav-item nav-link active"><i class="fa-solid fa-users"></i>Faq</a>
-            <a href="servicios.html" class="nav-item nav-link active"><i class="fa-solid fa-plane"></i> Servicios</a>
-            <a href="paquetes.html" class="nav-item nav-link active"><i class="fa-solid fa-boxes-packing"></i> Paquetes</a>
-            <a href="contacto.html" class="nav-item nav-link active"><i class="fa-solid fa-address-book"></i> Contacto</a>
-
+            
+             
             <!-- Menú principal con submenús -->
             <div class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                 <i class="fa-solid fa-bars"></i> Menú
               </a>
               <div class="dropdown-menu">
-
+                <a href="sobrenosotros.html" class="dropdown-item "><i class="fa-solid fa-users"></i>Faq</a>
+            <a href="servicios.html" class="dropdown-item "><i class="fa-solid fa-plane"></i> Servicios</a>
+            <a href="paquetes.html" class="dropdown-item "><i class="fa-solid fa-boxes-packing"></i> Paquetes</a>
+           <a href="#" id="openModalLink" class="dropdown-item"><i class="fa-solid fa-address-book"></i> Contacto</a> 
+                
                 <!-- Submenú Destinos -->
                 <div class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#">Destinos</a>
@@ -112,21 +115,17 @@
                     <a href="#" class="dropdown-item"><i class="fa-solid fa-tags"></i> Oferta 2</a>
                   </div>
                 </div>
-
-              </div>
-            </div>
-
-            <!-- Menú cuenta -->
-            <div class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                <i class="fa-solid fa-user"></i> Cuenta
-              </a>
-              <div class="dropdown-menu">
+                <!-- CUENTAS SUBMENU -->
+                  <div class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Cuenta</a>
+                  <div class="dropdown-menu">
                 <a href="login.html" class="dropdown-item"><i class="fa-solid fa-user-plus"></i> Registrarse</a>
                 <a href="login.html" class="dropdown-item"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
               </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
             <!-- Carrito -->
             <a href="paquetes.html" class="nav-item nav-link">
               <i class="fa-solid fa-cart-shopping"></i>
@@ -134,6 +133,7 @@
           </div>
         </div>
       </nav>
+      
     </div>
   </div>
   
@@ -174,6 +174,8 @@
 </a>
 </div>
 </div>
+
+
 
 
 
@@ -276,7 +278,7 @@
 <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
 <div class="team-item bg-white mb-4">
  <div class="team-img position-relative overflow-hidden">
- <img class="img-fluid w-100" src="./imagenes/avatar.jpg" alt="">
+ <img class="img-fluid w-100" src="./imagenes/ñery.jpg" alt="">
 <div class="team-social">
 <a class="btn btn-outline-primary btn-square" href="https://x.com/kingnadien" target="_blank"><i class="fab fa-twitter"></i></a>
 <a class="btn btn-outline-primary btn-square" href="https://www.facebook.com/SrNadien/" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -340,6 +342,7 @@
 <script src="mail/jqBootstrapValidation.min.js"></script>
 <script src="mail/contact.js"></script>
 <script src="js/main.js"></script>
+<<<<<<< HEAD
 <script> tailwind.config = {
             theme: {
                 extend: {
@@ -355,8 +358,25 @@
             }
         }
 </script>
+=======
+<script src="./javascript/contactomodal.js"></script>
 
+>>>>>>> 4beda07a02652853138767a63139c46dc6842ce1
 
+<div id="modalOverlay">
+  <div class="custom-modal">
+    <button class="modal-close" id="closeModalBtn">&times;</button>
+    <h2 style="text-align:center; margin-bottom:20px;">Contacto</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+      <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+      <input type="text" id="dni" name="dni"
+             placeholder="DNI (7-10 dígitos)" required pattern="\d{7,10}">
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </div>
+</div>
 
 </body>
 </html>

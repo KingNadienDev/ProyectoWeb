@@ -9877,6 +9877,56 @@ h6,
     height: 30px;
   }
 
+  #modalOverlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10%);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  #modalOverlay.visible {
+    display: flex;
+  }
+
+  #modalOverlay .custom-modal {
+    background: #fff;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    position: relative;
+  }
+
+  #modalOverlay .modal-close {
+    display: none !important;
+  }
+
+  #modalOverlay .custom-modal input,
+  #modalOverlay .custom-modal button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #modalOverlay .custom-modal input {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #modalOverlay .custom-modal button[type="submit"] {
+    margin-top: 16px;
+    padding: 12px;
+    background: #7AB730;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
 
 
  
