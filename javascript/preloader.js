@@ -3,5 +3,5 @@
     preloader.classList.add("loaded");
     setTimeout(() => {
       preloader.remove();
-    }, 1000);
+    }, 9200);
   });
